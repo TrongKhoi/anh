@@ -48,10 +48,11 @@ client.on("message", async message => {
     message.delete().catch(O_o=>{}); 
     message.channel.send(sayMessage);
   }
-   else{ message.reply('Tuổi gì mà đòi dùng bot?');}  
+   else{ message.reply('say cái cc');}  
   }
  
   if(command === "delete") {
+	  if(message.author.id == oid){
     // This command removes all messages from all users in the channel, up to 100.
     
     // get the delete count, as an actual number.
@@ -65,7 +66,7 @@ client.on("message", async message => {
     const fetched = await message.channel.fetchMessages({limit: deleteCount});
     message.channel.bulkDelete(fetched)
       .catch(error => message.reply(`Couldn't delete messages because of: ${error}`));
-  }
+  }}
 });
 
 
