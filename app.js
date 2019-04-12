@@ -74,7 +74,7 @@ client.on('message', msg => {
 	if (msg.content === "ảnh Thi") {
 	  number = 1;
 	  var imageNumber = Math.floor(Math.random()*(number - 1 + 1)) + 1;
-	  message.channel.send({files: ["./anh/Thi/" + imageNumber + ".jpg"]});
+	  msg.channel.send({files: ["./anh/Thi/" + imageNumber + ".jpg"]});
   }
   if (msg.content === 'Hi') { msg.reply('Hi');}
   if (msg.content === 'ten k') { msg.reply('anh đây');}
