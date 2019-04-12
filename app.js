@@ -123,6 +123,7 @@ client.on("message", (message) => {
   if (message.content.startsWith("Hiện hình")) {client.user.setStatus(`online`);}
   if (message.content.startsWith("Ẩn thân")) {client.user.setStatus(`invisible`);}
   if (message.content.startsWith("Afk")) {client.user.setStatus(`idle`);}
+  if (message.content.startsWith("Bận")) {client.user.setStatus(`dnd`);}
 	
   if (message.content.startsWith("meo meo")) {message.channel.send("Gâu gâu");}
   if (message.content.startsWith("em thích ai")) {message.channel.send("em thích trai kỹ thuật, họ mạnh mẽ và đầy nam tính");}
