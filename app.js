@@ -71,6 +71,11 @@ client.on("message", async message => {
 
 
 client.on('message', msg => {
+	if (msg.content === "ảnh Thi") {
+	  number = 1;
+	  var imageNumber = Math.floor(Math.random()*(number - 1 + 1)) + 1;
+	  message.channel.send({files: ["./anh/Thi/" + imageNumber + ".jpg"]});
+  }
   if (msg.content === 'Hi') { msg.reply('Hi');}
   if (msg.content === 'ten k') { msg.reply('anh đây');}
   if (msg.content === "đm") { msg.reply('bậy nè');}
@@ -187,11 +192,11 @@ client.on("message", (message) => {
 	  message.channel.send({files: ["./anh/Kiet/" + imageNumber + ".jpg"]});
   }
   
-  if (message.content.startsWith("ảnh Thi")) {
-	  number = 1;
-	  var imageNumber = Math.floor(Math.random()*(number - 1 + 1)) + 1;
-	  message.channel.send({files: ["./anh/Thi/" + imageNumber + ".jpg"]});
-  }
+ // if (message.content.startsWith("ảnh Thi")) {
+	//  number = 1;
+	//  var imageNumber = Math.floor(Math.random()*(number - 1 + 1)) + 1;
+	//  message.channel.send({files: ["./anh/Thi/" + imageNumber + ".jpg"]});
+ // }
   
   if (message.content.startsWith("ảnh Tít")) {
 	  number = 1;
