@@ -3,7 +3,6 @@ const client = new Discord.Client();
 const config = require("./config.json");
 const token = process.env.TOKEN;
 const oid = process.env.OID;
-const search = require('random-puppy')
 
 client.on("guildCreate", guild => {
   // This event triggers when the bot joins a guild.
@@ -35,31 +34,6 @@ client.on("message", async message => {
   const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
   
-  
-  if(command === "boobs") {
-  	module.exports.run = (bot, message, args, discord) => {
-  	let em = new discord.RichEmbed()
- 	.setTitle("Hulkbot Boobs")
- 	.setDescription("Here's a boob pic...")
-  	.setFooter(`Requested by ${message.author.username}`)
-  	.setTimestamp()
-  	let key = [
-   	 "boobs",
-   	 "tits",
-   	 "breasts",
-   	 "nipple",
-    	"bust"
- 	 ]
-  
-  	 if (!message.channel.nsfw) return message.channel.send(":underage: You need to be in an NSFW channel to use this command.");
- 	 let res = key[Math.floor(Math.random()*key.length)]
- 	 search(res).then(url => {
-   	 em.setImage(url)
-   	 message.channel.send({embed: em})
- 	 })
-	}
-}
-	
 	
   if(command === "ping") {
     // Calculates ping between sending a message and editing it, giving a nice round-trip latency.
