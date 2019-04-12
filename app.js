@@ -1,23 +1,6 @@
-// Load up the discord.js library
 const Discord = require("discord.js");
-
-// This is your client. Some people call it `bot`, some people call it `self`, 
-// some might call it `cootchie`. Either way, when you see `client.something`, or `bot.something`,
-// this is what we're refering to. Your client.
 const client = new Discord.Client();
-
-// Here we load the config.json file that contains our token and our prefix values. 
 const config = require("./config.json");
-
-
-//client.on("ready", () => {
-  // This event will run if the bot starts, and logs in, successfully.
-  //console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`); 
-  // Example of changing the bot's playing game to something useful. `client.user` is what the
-  // docs refer to as the "ClientUser".
-  //client.user.setActivity(`Serving ${client.guilds.size} servers`);
-//});
-
 
 client.on("guildCreate", guild => {
   // This event triggers when the bot joins a guild.
@@ -68,34 +51,6 @@ client.on("message", async message => {
     message.channel.send(sayMessage);
   }
  
-//Cau lenh kick nay rat nguy hiem
-  //if(command === "kick") {
-  //let member = message.mentions.members.first();
-  //let reason = args.slice(1).join(" ");
-  //member.kick(reason);
-  //}
-
-  
-  //if(command === "ban") {
-    // Most of this command is identical to kick, except that here we'll only let admins do it.
-    // In the real world mods could ban too, but this is just an example, right? ;)
-    //if(!message.member.roles.some(r=>["Administrator"].includes(r.name)) )
-      //return message.reply("Sorry, you don't have permissions to use this!");
-    
-    //let member = message.mentions.members.first();
-    //if(!member)
-      //return message.reply("Please mention a valid member of this server");
-   //if(!member.bannable) 
-      //return message.reply("I cannot ban this user! Do they have a higher role? Do I have ban permissions?");
-
-    //let reason = args.slice(1).join(' ');
-    //if(!reason) reason = "No reason provided";
-    
-    //await member.ban(reason)
-      //.catch(error => message.reply(`Sorry ${message.author} I couldn't ban because of : ${error}`));
-    //message.reply(`${member.user.tag} has been banned by ${message.author.tag} because: ${reason}`);
-  //}
-  
   if(command === "delete") {
     // This command removes all messages from all users in the channel, up to 100.
     
