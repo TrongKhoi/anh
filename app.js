@@ -42,14 +42,13 @@ client.on("message", async message => {
     m.edit(`Pong! Latency is ${m.createdTimestamp - message.createdTimestamp}ms. API Latency is ${Math.round(client.ping)}ms`);
   }
   
-  if(command === "say" && message.author.id == oid) {
-    // makes the bot say something and delete the message. As an example, it's open to anyone to use. 
-    // To get the "message" itself we join the `args` back into a string with spaces: 
+  if(command === "say") {
+    if(message.author.id == oid){
     const sayMessage = args.join(" ");
-    // Then we delete the command message (sneaky, right?). The catch just ignores the error with a cute smiley thing.
     message.delete().catch(O_o=>{}); 
-    // And we get the bot to say the thing: 
     message.channel.send(sayMessage);
+  }
+   else{ message.reply('Tuổi gì mà đòi dùng bot?');}  
   }
  
   if(command === "delete") {
