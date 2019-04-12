@@ -1,7 +1,8 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
 const config = require("./config.json");
-const oid = process.env.OID
+const token = process.env.TOKEN;
+const oid = process.env.OID;
 
 client.on("guildCreate", guild => {
   // This event triggers when the bot joins a guild.
@@ -227,4 +228,4 @@ client.on("message", (message) => {
   
 });
 
-client.login(config.token);
+client.login(token);
