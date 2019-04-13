@@ -1,9 +1,12 @@
-const time = Date(),
-pak = require('./package.json'),
+	const time = Date();
+	pak = require('./package.json');
 const Discord = require("discord.js");
 const client = new Discord.Client();
 const config = require("./config.json");
-profanities = require("./profanities.json"),
+	profanities = require("./profanities.json");
+	result = Math.round(Math.random());
+	cleverbot = require('cleverbot.io');
+	ms = require('ms');
 const token = process.env.TOKEN;
 const oid = process.env.OID;
 
