@@ -41,10 +41,35 @@ client.on("message", async message => {
   const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
   
+ if(command === "ping") {
+	 const search = require('random-puppy')
+
+module.exports.run = (client, message, args, discord) => {
+  let em = new discord.RichEmbed()
+  .setTitle("Hulkbot Boobs")
+  .setDescription("Here's a boob pic...")
+  .setFooter(`Requested by ${message.author.username}`)
+  .setTimestamp()
+  let key = [
+    "boobs",
+    "tits",
+    "breasts",
+    "nipple",
+    "bust"
+  ]
+  
+  if (!message.channel.nsfw) return message.channel.send(":underage: You need to be in an NSFW channel to use this command.");
+  let res = key[Math.floor(Math.random()*key.length)]
+  
+  search(res).then(url => {
+    em.setImage(url)
+    message.channel.send({embed: em})
+  })
+}
+	 
+  }
 	
   if(command === "ping") {
-    // Calculates ping between sending a message and editing it, giving a nice round-trip latency.
-    // The second ping is an average latency between the bot and the websocket server (one-way, not round-trip)
     const m = await message.channel.send("Ping?");
     m.edit(`Pong! Latency is ${m.createdTimestamp - message.createdTimestamp}ms. API Latency is ${Math.round(client.ping)}ms`);
   }
