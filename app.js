@@ -10,9 +10,6 @@ const config = require("./config.json");
 const token = process.env.TOKEN;
 const oid = process.env.OID;
 
-client.on("ready", () => {
-	bot.user.setActivity("Loading Sói K...", {type: "STREAMING", url: "https://twitch.tv/freakinghulk"})
-}
 	
 client.on("guildCreate", guild => {
   // This event triggers when the bot joins a guild.
