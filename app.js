@@ -24,20 +24,8 @@ client.on("guildCreate", guild => {
 
 
 client.on("message", async message => {
-  // This event will run on every single message received, from any channel or DM.
-  
-  // It's good practice to ignore other bots. This also makes your bot ignore itself
-  // and not get into a spam loop (we call that "botception").
   if(message.author.bot) return;
-  
-  // Also good practice to ignore any message that does not start with our prefix, 
-  // which is set in the configuration file.
   if(message.content.indexOf(config.prefix) !== 0) return;
-  
-  // Here we separate our "command" name, and our "arguments" for the command. 
-  // e.g. if we have the message "+say Is this the real life?" , we'll get the following:
-  // command = say
-  // args = ["Is", "this", "the", "real", "life?"]
   const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
   
@@ -59,27 +47,21 @@ client.on("message", async message => {
  
   if(command === "delete") {
 	  if(message.author.id == oid){
-    // This command removes all messages from all users in the channel, up to 100.
-    
-    // get the delete count, as an actual number.
-    const deleteCount = parseInt(args[0], 10);
-    
-    // Ooooh nice, combined conditions. <3
-    if(!deleteCount || deleteCount < 2 || deleteCount > 100)
-      return message.reply("Please provide a number between 2 and 100 for the number of messages to delete");
-    
-    // So we get our messages, and delete them. Simple enough, right?
-    const fetched = await message.channel.fetchMessages({limit: deleteCount});
-    message.channel.bulkDelete(fetched)
-      .catch(error => message.reply(`Couldn't delete messages because of: ${error}`));
+   	  const deleteCount = parseInt(args[0], 10);
+   	  if(!deleteCount || deleteCount < 2 || deleteCount > 100)
+   	  return message.reply("Please provide a number between 2 and 100 for the number of messages to delete");
+    	  const fetched = await message.channel.fetchMessages({limit: deleteCount});
+    	  message.channel.bulkDelete(fetched)
+         .catch(error => message.reply(`Couldn't delete messages because of: ${error}`));
   }}
 });
 
 
 client.on('message', msg => {
+	
 	if(msg.content === 'boobs') {
 	const search = require('random-puppy')
-	module.exports.run = (client, message, args, discord) => {
+	module.exports.run = (bot, msg, args, discord) => {
  	let em = new discord.RichEmbed()
   	.setTitle("Sói K Boobs")
  	.setDescription("Here's a boob pic...")
@@ -92,11 +74,11 @@ client.on('message', msg => {
   	   "nipple",
    	   "bust"
   		  ]  
-  if (!message.channel.nsfw) return message.channel.send(":underage: You need to be in an NSFW channel to use this command.");
+  if (!msg.channel.nsfw) return msg.channel.send(":underage: You need to be in an NSFW channel to use this command.");
   let res = key[Math.floor(Math.random()*key.length)]  
     search(res).then(url => {
     em.setImage(url)
-    message.channel.send({embed: em})
+    msg.channel.send({embed: em})
     })
   }	 
 }
