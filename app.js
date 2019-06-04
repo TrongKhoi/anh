@@ -98,7 +98,7 @@ client.on('message', msg => {
   if (msg.content === "ai hay ăn cứt") { msg.reply('Ngoài bạn ra còn ai đâu');}
   if (msg.content === "Tenk") { msg.reply('Anh ấy đang bận.');}
   if (msg.content === "dm") { msg.reply('tự vả vào mồm đi');}
-  if (msg.content === "tenk") { msg.reply('gọi cc');}
+  if (msg.content === "tenk") { msg.reply('ơi anh đây');}
 });
 
 
@@ -146,6 +146,8 @@ client.on("message", (message) => {
   if (message.content.startsWith("Bận")) {client.user.setStatus(`dnd`);}
 	
   if (message.content.startsWith("meo meo")) {message.channel.send("Gâu gâu");}
+  if (message.content.startsWith("chào mn")) {message.channel.send("Mn chào em");}
+  if (message.content.startsWith("act cool")) {message.channel.send("Đứng hình mất 5s");}
   if (message.content.startsWith("em thích ai")) {message.channel.send("em thích trai kỹ thuật, họ mạnh mẽ và đầy nam tính");}
   if (message.content.startsWith("info")) {message.channel.send({embed});}
   if (message.content.startsWith("rank Ten K")) {message.channel.send(" ", {files: ["./anh/rank.png"]});}
