@@ -10,7 +10,8 @@ const config = require("./config.json");
 const token = process.env.TOKEN;
 const oid = process.env.OID;
 
-	
+client.user.setActivity('Ten K', { type: 'WATCHING' }); 
+
 client.on("guildCreate", guild => {
   // This event triggers when the bot joins a guild.
   console.log(`New guild joined: ${guild.name} (id: ${guild.id}). This guild has ${guild.memberCount} members!`);
