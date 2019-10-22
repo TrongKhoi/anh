@@ -11,7 +11,7 @@ const token = process.env.TOKEN;
 const oid = process.env.OID;
 
 client.on("ready", () => {
-  client.user.setActivity('Ten K ị', { type: 'STREAMING' }); 
+  client.user.setActivity('!help', { type: 'PLAYING' }); 
 })
 	
 client.on("guildCreate", guild => {
