@@ -11,7 +11,7 @@ const token = process.env.TOKEN;
 const oid = process.env.OID;
 
 client.on("ready", () => {
-  client.user.setActivity('Cà Khịa', { type: 'PLAYING' }); 
+  client.user.setActivity('!help', { type: 'PLAYING' }); 
 })
 	
 client.on("guildCreate", guild => {
@@ -143,10 +143,10 @@ const embed = new Discord.RichEmbed()
 
 
 client.on("message", (message) => {
-  if (message.content.startsWith("Online")) {client.user.setStatus(`online`);}
-  if (message.content.startsWith("Offline")) {client.user.setStatus(`invisible`);}
+  if (message.content.startsWith("Hiện hình")) {client.user.setStatus(`online`);}
+  if (message.content.startsWith("Ẩn thân")) {client.user.setStatus(`invisible`);}
   if (message.content.startsWith("Afk")) {client.user.setStatus(`idle`);}
-  if (message.content.startsWith("Busy")) {client.user.setStatus(`dnd`);}
+  if (message.content.startsWith("Bận")) {client.user.setStatus(`dnd`);}
 	
   if (message.content.startsWith("meo meo")) {message.channel.send("Gâu gâu");}
   if (message.content.startsWith("chào mn")) {message.channel.send("Mn chào em");}
@@ -249,7 +249,6 @@ client.on("message", (message) => {
   if (message.content.startsWith("lễ tân làm gì")) {message.channel.send("Vui lòng khách đến, vừa lòng khách đi.");}
   if (message.content.startsWith("cu lua")) {message.channel.send("Lừa cc");}
   if (message.content.startsWith("làm tốt anh có thưởng")) {message.channel.send("Dạ <3");}
-	
   
 });
 
