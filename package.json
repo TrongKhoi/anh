@@ -1,10 +1,10 @@
 {
-
   "name": "Test",
-
-  "description": "Test",
-
+  "description": "a really cool app",
   "version": "0.0.0",
+  "engines": {
+    "node": "10.6.0"
+  }
 
   "main": "app.js",
 
