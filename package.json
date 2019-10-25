@@ -16,11 +16,7 @@
   
   "engines": {
     "node": "12.13.0"
-  
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Barsik008/PossumBot.git"
-  },
+
   
   "dependencies": {
     "google-url": "latest",
