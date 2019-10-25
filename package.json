@@ -2,9 +2,6 @@
   "name": "Test",
   "description": "a really cool app",
   "version": "0.0.0",
-  "engines": {
-    "node": "10.x"
-  },
 
   "main": "app.js",
 
@@ -40,7 +37,8 @@
           "fast-html-parser": "^1.0.1",
           "cleverbot.io": "^1.0.4",
           "mongoose": "latest"
-
   }
-
+    "engines": {
+    "node": "10.x"
+  },
 }
