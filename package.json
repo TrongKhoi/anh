@@ -33,6 +33,6 @@
           "cleverbot.io": "^1.0.4",
           "mongoose": "latest"
 
-  },
+  }
 
 }
