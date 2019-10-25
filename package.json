@@ -38,7 +38,4 @@
           "cleverbot.io": "^1.0.4",
           "mongoose": "latest"
   }
-    "engines": {
-    "node": "10.x"
-  },
 }
