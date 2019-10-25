@@ -14,11 +14,8 @@
 
   },
   
-  "engines": {
-    "node": "10.6.0"
-    }
-
   "dependencies": {
+    "node": "12.13.0",
     "google-url": "latest",
           "ffmpeg": "latest",
           "get-youtube-id": "latest",
