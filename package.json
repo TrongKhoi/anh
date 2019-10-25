@@ -1,10 +1,11 @@
 {
+
   "name": "Test",
-  "description": "a really cool app",
+
+  "description": "Test",
+
   "version": "0.0.0",
-  "engines": {
-    "node": "12.13.0"
-  }
+
   "main": "app.js",
 
   "scripts": {
@@ -12,9 +13,8 @@
     "start": "node app.js"
 
   },
-  
+
   "dependencies": {
-    "node": "12.13.0",
     "google-url": "latest",
           "ffmpeg": "latest",
           "get-youtube-id": "latest",
@@ -39,5 +39,8 @@
           "fast-html-parser": "^1.0.1",
           "cleverbot.io": "^1.0.4",
           "mongoose": "latest"
+
   }
+
 }
+© 2019 GitHub, Inc.
