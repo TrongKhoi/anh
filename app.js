@@ -154,7 +154,7 @@ client.on("message", (message) => {
   if (message.content.startsWith("em thích ai")) {message.channel.send("em thích trai kỹ thuật, họ mạnh mẽ và đầy nam tính");}
   if (message.content.startsWith("info")) {message.channel.send({embed});}
   if (message.content.startsWith("rank Ten K")) {message.channel.send(" ", {files: ["./anh/rank.png"]});}
-  if (message.content.startsWith("!!rank")) {message.channel.send("Tiếp tục cào phím đi", {files: ["./anh/rank.png"]});}
+  if (message.content.startsWith(",!rank")) {message.channel.send("Tiếp tục cào phím đi", {files: ["./anh/rank.png"]});}
   if (message.content.startsWith("rank ten K")) {message.channel.send("wow", {files: ["./anh/rank.png"]});}
   if (message.content.startsWith("rank ten k")) {message.channel.send("wao", {files: ["./anh/rank.png"]});}
   if (message.content.startsWith("rank Ten k")) {message.channel.send("woa", {files: ["./anh/rank.png"]});}
