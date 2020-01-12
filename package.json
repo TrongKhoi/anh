@@ -8,11 +8,11 @@
 
   "main": "app.js",
 
-  "scripts": {
+  //"scripts": {
 
-    "start": "node app.js"
+   // "start": "node app.js"
 
-  },
+  //},
 
   "dependencies": {
     "google-url": "latest",
