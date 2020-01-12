@@ -11,7 +11,7 @@ const token = process.env.TOKEN;
 const oid = process.env.OID;
 
 client.on("ready", () => {
-  client.user.setActivity('Lag', { type: 'PLAYING' }); 
+  client.user.setActivity('❤️💛💚💙💜🖤', { type: 'PLAYING' }); 
 })
 	
 client.on("guildCreate", guild => {
@@ -205,11 +205,12 @@ client.on("message", (message) => {
 	  number = 1;
 	  var imageNumber = Math.floor(Math.random()*(number - 1 + 1)) + 1;
 	  message.channel.send({files: ["./anh/Linh2/" + imageNumber + ".jpg"]});
+  }
   if (message.content.startsWith("keme K")) {
 	  number = 1;
 	  var imageNumber = Math.floor(Math.random()*(number - 1 + 1)) + 1;
 	  message.channel.send({files: ["./anh/Linh2/" + imageNumber + ".jpg"]});
-	
+  }
   if (message.content.startsWith("ảnh Ly")) {
 	  number = 4;
 	  var imageNumber = Math.floor(Math.random()*(number - 1 + 1)) + 1;
