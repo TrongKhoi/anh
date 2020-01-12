@@ -11,7 +11,7 @@ const token = process.env.TOKEN;
 const oid = process.env.OID;
 
 client.on("ready", () => {
-  client.user.setActivity('Tôi là Linh', { type: 'PLAYING' }); 
+  client.user.setActivity('❤️💛💚💙💜🖤', { type: 'PLAYING' }); 
 })
 	
 client.on("guildCreate", guild => {
@@ -45,7 +45,7 @@ client.on("message", async message => {
     message.delete().catch(O_o=>{}); 
     message.channel.send(sayMessage);
   }
-   else{ message.reply('say cái cc');}  
+   else{ message.reply('Xin lỗi bạn chưa đủ tuổi để làm việc này!');}  
   }
  
   if(command === "delete") {
@@ -130,7 +130,7 @@ const embed = new Discord.RichEmbed()
    */
   .setTimestamp()
   .setURL("https://discord.js.org/#/docs/main/indev/class/RichEmbed")
-  .addField("Name: Ten K", "🙄🙄🙄🙄🙄")
+  .addField("Name: Cú lừa", "🙄🙄🙄🙄🙄")
   /*
    * Inline fields may not display as inline if the thumbnail and/or image is too big.
    */
@@ -154,12 +154,13 @@ client.on("message", (message) => {
   if (message.content.startsWith("em thích ai")) {message.channel.send("em thích trai kỹ thuật, họ mạnh mẽ và đầy nam tính");}
   if (message.content.startsWith("info")) {message.channel.send({embed});}
   if (message.content.startsWith("rank Ten K")) {message.channel.send(" ", {files: ["./anh/rank.png"]});}
-  if (message.content.startsWith(",!rank")) {message.channel.send("Tiếp tục cào phím đi", {files: ["./anh/rank.png"]});}
-  if (message.content.startsWith("rank ten K")) {message.channel.send("wow", {files: ["./anh/rank.png"]});}
-  if (message.content.startsWith("rank ten k")) {message.channel.send("wao", {files: ["./anh/rank.png"]});}
-  if (message.content.startsWith("rank Ten k")) {message.channel.send("woa", {files: ["./anh/rank.png"]});}
+  //if (message.content.startsWith("!rank")) {message.channel.send("Tiếp tục cào phím đi", {files: ["./anh/rank.png"]});}
+  //if (message.content.startsWith("rank ten K")) {message.channel.send("wow", {files: ["./anh/rank.png"]});}
+  //if (message.content.startsWith("rank ten k")) {message.channel.send("wao", {files: ["./anh/rank.png"]});}
+  //if (message.content.startsWith("rank Ten k")) {message.channel.send("woa", {files: ["./anh/rank.png"]});}
   if (message.content.startsWith("gái")) {message.channel.send("đâu? ra trình diện với Ten K", {files: ["./anh/dam.jpg"]});}
   if (message.content.startsWith("dm")) {message.channel.send("đứa nào bậy tao đập giờ", {files: ["./anh/pig.jpg"]});}
+  if (message.content.startsWith("dm bot")) {message.channel.send("Bot xin phép được dm bạn");}
   if (message.content.startsWith("??")) {message.channel.send("", {files: ["./anh/SuyNghi.png"]});}
   if (message.content.startsWith("na ní")) {message.channel.send(" ", {files: ["./anh/aas.jpg"]});}  
   if (message.content.startsWith("haha")) {message.channel.send(" ", {files: ["./anh/haha.gif"]});}
@@ -257,7 +258,7 @@ client.on("message", (message) => {
   if (message.content.startsWith("tròn vuông")) {message.channel.send("○ □");}
   if (message.content.startsWith("vuông vuông")) {message.channel.send("□ □");}
   if (message.content.startsWith("tròn tròn")) {message.channel.send("○ ○");}
-  if (message.content.startsWith("Ten K là ai")) {message.channel.send(":)");}
+  if (message.content.startsWith("Ten K là ai")) {message.channel.send("Hoàng thượng vạn tuế, vạn vạn tuế!!");}
   if (message.content.startsWith("cú lừa")) {message.channel.send("lừa cc");}
   if (message.content.startsWith("lễ tân đâu")) {message.channel.send("Dạ, em đây.");}
   if (message.content.startsWith("rên thử coi")) {message.channel.send("ư ư kimochi");}
