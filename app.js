@@ -11,7 +11,7 @@ const token = process.env.TOKEN;
 const oid = process.env.OID;
 
 client.on("ready", () => {
-  client.user.setActivity('Ten K', { type: 'PLAYING' }); 
+  client.user.setActivity('Tôi là Linh', { type: 'PLAYING' }); 
 })
 	
 client.on("guildCreate", guild => {
@@ -178,7 +178,7 @@ client.on("message", (message) => {
   if (message.content.startsWith("hê lo")) {message.channel.send(" ", {files: ["./anh/hello.gif"]});}
   if (message.content.startsWith("fuck")) {message.channel.send(" ", {files: ["./anh/sex.png"]});}
   
-  if (message.content.startsWith("ảnh Lê")) {
+  if (message.content.startsWith("ảnh Dưa")) {
 	  number = 5;
 	  var imageNumber = Math.floor(Math.random()*(number - 1 + 1)) + 1;
 	  message.channel.send({files: ["./anh/Le/" + imageNumber + ".jpg"]});
@@ -189,11 +189,26 @@ client.on("message", (message) => {
 	  message.channel.send({files: ["./anh/Chang/" + imageNumber + ".jpg"]});
   }
   if (message.content.startsWith("ảnh Linh")) {
-	  number = 4;
+	  number = 1;
 	  var imageNumber = Math.floor(Math.random()*(number - 1 + 1)) + 1;
 	  message.channel.send({files: ["./anh/Linh/" + imageNumber + ".jpg"]});
   }
  
+  if (message.content.startsWith("ảnh Nhung")) {
+	  number = 1;
+	  var imageNumber = Math.floor(Math.random()*(number - 1 + 1)) + 1;
+	  message.channel.send({files: ["./anh/Nhung/" + imageNumber + ".jpg"]});
+  }
+	
+  if (message.content.startsWith("Linh xấu gái")) {
+	  number = 1;
+	  var imageNumber = Math.floor(Math.random()*(number - 1 + 1)) + 1;
+	  message.channel.send({files: ["./anh/Linh2/" + imageNumber + ".jpg"]});
+  if (message.content.startsWith("keme K")) {
+	  number = 1;
+	  var imageNumber = Math.floor(Math.random()*(number - 1 + 1)) + 1;
+	  message.channel.send({files: ["./anh/Linh2/" + imageNumber + ".jpg"]});
+	
   if (message.content.startsWith("ảnh Ly")) {
 	  number = 4;
 	  var imageNumber = Math.floor(Math.random()*(number - 1 + 1)) + 1;
