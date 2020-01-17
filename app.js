@@ -90,7 +90,7 @@ client.on('message', msg => {
 	
 	
 	if (msg.content === "ảnh Thi") {
-	  number = 1;
+	  number = 2;
 	  var imageNumber = Math.floor(Math.random()*(number - 1 + 1)) + 1;
 	  msg.channel.send({files: ["./anh/Thi/" + imageNumber + ".jpg"]});
   }
@@ -196,7 +196,7 @@ client.on("message", (message) => {
   }
  
   if (message.content.startsWith("ảnh Nhung")) {
-	  number = 1;
+	  number = 2;
 	  var imageNumber = Math.floor(Math.random()*(number - 1 + 1)) + 1;
 	  message.channel.send({files: ["./anh/Nhung/" + imageNumber + ".jpg"]});
   }
