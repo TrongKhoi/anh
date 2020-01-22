@@ -195,7 +195,7 @@ client.on("message", (message) => {
 	  var imageNumber = Math.floor(Math.random()*(number - 1 + 1)) + 1;
 	  message.channel.send({files: ["./anh/Linh/" + imageNumber + ".jpg"]});
 	  }
-	  else { message.reply.('Error! DM Admin to fix command');}
+	  else { message.reply.("Error! DM Admin to fix command");}
   }
  
   if (message.content.startsWith("ảnh Nhung")) {
@@ -204,7 +204,7 @@ client.on("message", (message) => {
 	  var imageNumber = Math.floor(Math.random()*(number - 1 + 1)) + 1;
 	  message.channel.send({files: ["./anh/Nhung/" + imageNumber + ".jpg"]});
 	}
-	   else { message.reply.('Error! DM Admin to fix command');}
+	   else { message.reply.("Error! DM Admin to fix command");}
   }
 	
   if (message.content.startsWith("Linh xida")) {
@@ -213,7 +213,7 @@ client.on("message", (message) => {
 	  var imageNumber = Math.floor(Math.random()*(number - 1 + 1)) + 1;
 	  message.channel.send({files: ["./anh/Linh2/" + imageNumber + ".jpg"]});
 	  }
-	   else { message.reply.('Error! DM Admin to fix command');}
+	   else { message.reply.("Error! DM Admin to fix command");}
   }
   if (message.content.startsWith("keme K")) {
 	  number = 2;
