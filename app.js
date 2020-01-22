@@ -178,7 +178,9 @@ client.on("message", (message) => {
   if (message.content.startsWith("Halo")) {message.channel.send(" ", {files: ["./anh/hello.gif"]});}
   if (message.content.startsWith("hê lo")) {message.channel.send(" ", {files: ["./anh/hello.gif"]});}
   if (message.content.startsWith("fuck")) {message.channel.send(" ", {files: ["./anh/sex.png"]});}
-  
+ 	 if (message.content.startsWith("64")) {message.channel.send(" ", {files: ["./anh/sex.png"]});}
+	if (message.content.startsWith("35")) {message.channel.send(" ", {files: ["./anh/sex.png"]});}
+	if (message.content.startsWith("12")) {message.channel.send(" ", {files: ["./anh/sex.png"]});}
   if (message.content.startsWith("ảnh Dưa")) {
 	  number = 5;
 	  var imageNumber = Math.floor(Math.random()*(number - 1 + 1)) + 1;
@@ -195,6 +197,7 @@ client.on("message", (message) => {
 	  var imageNumber = Math.floor(Math.random()*(number - 1 + 1)) + 1;
 	  message.channel.send({files: ["./anh/Linh/" + imageNumber + ".jpg"]});
 	  }
+	  else { message.reply.('Error! Please answer the questions if you are human: 7+57=?');}
   }
  
   if (message.content.startsWith("ảnh Nhung")) {
@@ -203,6 +206,7 @@ client.on("message", (message) => {
 	  var imageNumber = Math.floor(Math.random()*(number - 1 + 1)) + 1;
 	  message.channel.send({files: ["./anh/Nhung/" + imageNumber + ".jpg"]});
 	}
+	  else { message.reply.('Error! Please answer the questions if you are human: 22+13=?');}
   }
 	
   if (message.content.startsWith("Linh xida")) {
@@ -211,6 +215,7 @@ client.on("message", (message) => {
 	  var imageNumber = Math.floor(Math.random()*(number - 1 + 1)) + 1;
 	  message.channel.send({files: ["./anh/Linh2/" + imageNumber + ".jpg"]});
 	  }
+	  else { message.reply.('Error! Please answer the questions if you are human: 7+5=?');}
   }
   if (message.content.startsWith("keme K")) {
 	  number = 2;
