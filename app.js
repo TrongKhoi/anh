@@ -95,7 +95,7 @@ client.on('message', msg => {
 	  msg.channel.send({files: ["./anh/Thi/" + imageNumber + ".jpg"]});
   }
   if (msg.content === 'Hi') { msg.reply('Hi');}
-  if (msg.content === 'ten k') { msg.reply('anh đây');}
+  if (msg.content === 'tenk') { msg.reply('anh đây');}
   if (msg.content === "đm") { msg.reply('bậy nè');}
   if (msg.content === "ai hay thủ dâm") { msg.reply('Là bạn đó');}
   if (msg.content === "ai hay ăn cứt") { msg.reply('Ngoài bạn ra còn ai đâu');}
