@@ -23,7 +23,7 @@ client.on("ready", () => {
 client.on("message", (message) => {
     let content = ["xin thính", "thính", "thính ơi", "xin thinh","úm ba la xì bùa cho con cái thính","thinh","xin thinh"]
     if (content.includes(message.content.toLowerCase())) {
-        if(message.author.id == '479503913565945856') 
+        if(message.author.id == '457095791727607809') 
             return message.reply(`Học không lo học suốt ngày thính cc `).then(m => m.delete(5000))
         const random = array[Math.floor(Math.random() * array.length)]
         message.channel.send(random)
