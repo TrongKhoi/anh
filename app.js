@@ -175,8 +175,8 @@ client.on("message", (message) => {
   //if (message.content.startsWith("rank Ten k")) {message.channel.send("woa", {files: ["./anh/rank.png"]});}
   if (message.content.startsWith("gái")) {message.channel.send("đâu? ra trình diện với Ten K", {files: ["./anh/dam.jpg"]});}
   if (message.content.startsWith("dm")) {message.channel.send("đứa nào bậy tao đập giờ", {files: ["./anh/pig.jpg"]});}
-  if (message.content.startsWith("tuk")) {message.channel.send("Tuk dùm luôn nè", {files: ["./anh/tuk.jpg"]});}
-  if (message.content.startsWith("Tuk")) {message.channel.send("Tuk dùm luôn nè", {files: ["./anh/tuk.jpg"]});}
+  if (message.content.startsWith("tuk")) {message.channel.send("Kao tuk dùm luôn nè", {files: ["./anh/tuk.jpg"]});}
+  if (message.content.startsWith("Tuk")) {message.channel.send("Kao tuk dùm luôn nè", {files: ["./anh/tuk.jpg"]});}
   if (message.content.startsWith("dm bot")) {message.channel.send("Bot xin phép được dm bạn");}
   if (message.content.startsWith("??")) {message.channel.send("", {files: ["./anh/SuyNghi.png"]});}
   if (message.content.startsWith("na ní")) {message.channel.send(" ", {files: ["./anh/aas.jpg"]});}  
