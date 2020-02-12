@@ -36,6 +36,28 @@ client.on("message", (message) => {
         message.channel.send(random)
     }    
 })
+client.on("message", (message) => {
+    let content = ["tenk", "ten k", "khôi", "ten"]
+    if (content.includes(message.content.toLowerCase())) {
+        if(message.author.id == '506346663582105600') 
+         return message.reply(`Ơi!! Đã có anh ở đây rồi`).then(m => m.delete(30000))
+    }    
+})
+client.on("message", (message) => {
+    let content = ["tenk", "ten k", "khôi", "ten"]
+    if (content.includes(message.content.toLowerCase())) {
+        if(message.author.id == '661979242531127316') 
+         return message.reply(`Ơi!! Đã có anh ở đây rồi`).then(m => m.delete(30000))
+    }    
+})
+client.on("message", (message) => {
+    let content = ["tenk", "ten k", "khôi", "ten"]
+    if (content.includes(message.content.toLowerCase())) {
+        if(message.author.id == '464774353611915284') 
+         return message.reply(`Ơi!! Đã có anh ở đây rồi`).then(m => m.delete(30000))
+    }    
+})
+
 
 client.on("guildCreate", guild => {
   // This event triggers when the bot joins a guild.
