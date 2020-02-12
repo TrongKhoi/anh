@@ -27,6 +27,10 @@ client.on("message", (message) => {
         const random = array[Math.floor(Math.random() * array.length)]
         message.channel.send(random)
     }   
+let content = ["tuk", "bực"]
+    if (content.includes(message.content.toLowerCase())) {
+	message.channel.send("tuk lắm mà chả làm gì được.", {files: ["./anh/tuk.jpg"]});
+    }   
 })
 
 client.on("guildCreate", guild => {
