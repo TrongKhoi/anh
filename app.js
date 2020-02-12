@@ -15,7 +15,7 @@ const token = process.env.TOKEN;
 const oid = process.env.OID;
 
 client.on("ready", () => {
-  client.user.setActivity('❤️💛💚💙💜🖤', { type: 'PLAYING' }); 
+  client.user.setActivity('Kao đang ị', { type: 'PLAYING' }); 
 })
 
 //thính thính =)))
@@ -24,6 +24,14 @@ client.on("message", (message) => {
     if (content.includes(message.content.toLowerCase())) {
         //if(message.author.id == '457095791727607809') 
            //return message.reply(`Học không lo học suốt ngày thính cc `).then(m => m.delete(5000))
+        const random = array[Math.floor(Math.random() * array.length)]
+        message.channel.send(random)
+    }    
+})
+//
+client.on("message", (message) => {
+    let content = ["valentine", "valentai", "va lung tung", "valungtung","va len thai","va vào nhau","tán gái"]
+    if (content.includes(message.content.toLowerCase())) {
         const random = array[Math.floor(Math.random() * array.length)]
         message.channel.send(random)
     }    
