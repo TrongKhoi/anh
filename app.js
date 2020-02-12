@@ -311,9 +311,9 @@ client.on("message", (message) => {
   if (message.content.startsWith("dm bot")) {message.channel.send("Bậy nè");}
   if (message.content.startsWith("bye")) {message.channel.send("Thả chó, tiễn khách");}
   if (message.content.startsWith("@@")) {message.channel.send("O_o");}
-  if (message.content.startsWith("vuông tròn")) {message.channel.send("□ ○");}
-  if (message.content.startsWith("tròn vuông")) {message.channel.send("○ □");}
-  if (message.content.startsWith("vuông vuông")) {message.channel.send("□ □");}
+  if (message.content.startsWith("con khôi")) {message.channel.send("muốn bị đụ hả");}
+  if (message.content.startsWith("con khoi")) {message.channel.send("Viết có dấu đi ko lại ăn cháo bây giờ");}
+  if (message.content.startsWith("Con khôi")) {message.channel.send("Vả gãy răng giờ");}
   if (message.content.startsWith("iu thươn")) {
 	  //return message.reply(`Học không lo học suốt ngày thính cc `).then(m => m.delete(5000))
         const random = array[Math.floor(Math.random() * array.length)]
