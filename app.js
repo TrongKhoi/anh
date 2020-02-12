@@ -1,5 +1,9 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
+//
+var fs = require('fs')
+var array = fs.readFileSync('thinh.txt','utf8').split("\n")
+//
 const config = require("./config.json");
 	const time = Date();
 	pak = require('./package.json');
@@ -14,6 +18,18 @@ client.on("ready", () => {
   client.user.setActivity('❤️💛💚💙💜🖤', { type: 'PLAYING' }); 
 })
 
+//
+//thính thính =)))
+client.on("message", (message) => {
+    let content = ["xin thính", "thính", "thính ơi", "xin thinh","úm ba la xì bùa cho con cái thính","thinh","xin thinh"]
+    if (content.includes(message.content.toLowerCase())) {
+        if(message.author.id == '479503913565945856') 
+            return message.reply(`Học không lo học suốt ngày thính cc `).then(m => m.delete(5000))
+        const random = array[Math.floor(Math.random() * array.length)]
+        message.channel.send(random)
+    }   
+})
+//
 
 client.on("guildCreate", guild => {
   // This event triggers when the bot joins a guild.
