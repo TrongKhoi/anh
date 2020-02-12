@@ -283,7 +283,7 @@ client.on("message", (message) => {
   if (message.content.startsWith("tròn vuông")) {message.channel.send("○ □");}
   if (message.content.startsWith("vuông vuông")) {message.channel.send("□ □");}
   if (message.content.startsWith("thả thính")) {
-	  return message.reply(`Học không lo học suốt ngày thính cc `).then(m => m.delete(5000))
+	  //return message.reply(`Học không lo học suốt ngày thính cc `).then(m => m.delete(5000))
         const random = array[Math.floor(Math.random() * array.length)]
         message.channel.send(random);}
   if (message.content.startsWith("Ten K là ai")) {message.channel.send("Hoàng thượng vạn tuế, vạn vạn tuế!!");}
