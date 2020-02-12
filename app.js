@@ -20,7 +20,7 @@ client.on("ready", () => {
 
 //thính thính =)))
 client.on("message", (message) => {
-    let content = ["xin thính", "thính", "thả tym", "xin thinh","rải thính","thinh","xin thinh"]
+    let content = ["xin thính", "thính", "thả tym", "xin thinh","rải thính","thinh","thả thính"]
     if (content.includes(message.content.toLowerCase())) {
         //if(message.author.id == '457095791727607809') 
            //return message.reply(`Học không lo học suốt ngày thính cc `).then(m => m.delete(5000))
@@ -314,7 +314,7 @@ client.on("message", (message) => {
   if (message.content.startsWith("vuông tròn")) {message.channel.send("□ ○");}
   if (message.content.startsWith("tròn vuông")) {message.channel.send("○ □");}
   if (message.content.startsWith("vuông vuông")) {message.channel.send("□ □");}
-  if (message.content.startsWith("thả thính")) {
+  if (message.content.startsWith("iu thươn")) {
 	  //return message.reply(`Học không lo học suốt ngày thính cc `).then(m => m.delete(5000))
         const random = array[Math.floor(Math.random() * array.length)]
         message.channel.send(random);}
