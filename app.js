@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
-//
+//Thính Thính
 var fs = require('fs')
 var array = fs.readFileSync('thinh.txt','utf8').split("\n")
 //
@@ -18,18 +18,16 @@ client.on("ready", () => {
   client.user.setActivity('❤️💛💚💙💜🖤', { type: 'PLAYING' }); 
 })
 
-//
 //thính thính =)))
 client.on("message", (message) => {
-    let content = ["xin thính", "thính", "thính ơi", "xin thinh","úm ba la xì bùa cho con cái thính","thinh","xin thinh"]
+    let content = ["xin thính", "thính", "thả tym", "xin thinh","rải thính","thinh","xin thinh"]
     if (content.includes(message.content.toLowerCase())) {
-        if(message.author.id == '457095791727607809') 
-            return message.reply(`Học không lo học suốt ngày thính cc `).then(m => m.delete(5000))
+        //if(message.author.id == '457095791727607809') 
+           //return message.reply(`Học không lo học suốt ngày thính cc `).then(m => m.delete(5000))
         const random = array[Math.floor(Math.random() * array.length)]
         message.channel.send(random)
     }   
 })
-//
 
 client.on("guildCreate", guild => {
   // This event triggers when the bot joins a guild.
@@ -284,7 +282,10 @@ client.on("message", (message) => {
   if (message.content.startsWith("vuông tròn")) {message.channel.send("□ ○");}
   if (message.content.startsWith("tròn vuông")) {message.channel.send("○ □");}
   if (message.content.startsWith("vuông vuông")) {message.channel.send("□ □");}
-  if (message.content.startsWith("tròn tròn")) {message.channel.send("○ ○");}
+  if (message.content.startsWith("thả thính")) {
+	  return message.reply(`Học không lo học suốt ngày thính cc `).then(m => m.delete(5000))
+        const random = array[Math.floor(Math.random() * array.length)]
+        message.channel.send(random);}
   if (message.content.startsWith("Ten K là ai")) {message.channel.send("Hoàng thượng vạn tuế, vạn vạn tuế!!");}
   if (message.content.startsWith("cú lừa")) {message.channel.send("lừa cc");}
   if (message.content.startsWith("lễ tân đâu")) {message.channel.send("Dạ, em đây.");}
