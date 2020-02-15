@@ -192,10 +192,6 @@ client.on("message", (message) => {
   if (message.content.startsWith("Bot Offline")) {client.user.setStatus(`invisible`);}
   if (message.content.startsWith("Bot Afk")) {client.user.setStatus(`idle`);}
   if (message.content.startsWith("Bot Busy")) {client.user.setStatus(`dnd`);}
-  if (message.content.startsWith("sever japan")) {
-	  guild.setRegion('Japan')
- 	  .then(g => console.log(`Updated guild region to ${g.region}`))
- 	  .catch(console.error);;}	
 	
   if (message.content.startsWith("meo meo")) {message.channel.send("Gâu gâu");}
   if (message.content.startsWith("chào mn")) {message.channel.send("Mn chào em");}
