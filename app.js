@@ -141,7 +141,7 @@ client.on('message', msg => {
   }
   if (msg.content === 'Hi') { msg.reply('Hi');}
   if (msg.content === 'tenk') { msg.reply('anh đây');}
-  if (msg.content === "đm") { msg.reply('bậy nè');}
+  if (msg.content === "đm bot") { msg.reply('bậy nè');}
   if (msg.content === "ai hay thủ dâm") { msg.reply('Là bạn đó');}
   if (msg.content === "ai hay ăn cứt") { msg.reply('Ngoài bạn ra còn ai đâu');}
   if (msg.content === "Tenk") { msg.reply('Anh ấy đang bận.');}
