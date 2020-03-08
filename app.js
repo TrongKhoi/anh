@@ -245,6 +245,15 @@ client.on("message", (message) => {
 	  else { message.reply("Error! DM Admin to fix command");}
   }
  
+if (message.content.startsWith("ảnh Lan")) {
+	  if(message.author.id == oid){
+	  number = 1;
+	  var imageNumber = Math.floor(Math.random()*(number - 1 + 1)) + 1;
+	  message.channel.send({files: ["./anh/Lan/" + imageNumber + ".jpg"]});
+	  }
+	  else { message.reply("Error! DM Admin to fix command");}
+  }
+	
   if (message.content.startsWith("ảnh Nhung")) {
 	  if(message.author.id == oid){
 	  number = 2;
