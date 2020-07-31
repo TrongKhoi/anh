@@ -15,7 +15,7 @@ const token = process.env.TOKEN;
 const oid = process.env.OID;
 
 client.on("ready", () => {
-  client.user.setActivity('Pornhub', { type: 'WATCHING' }); 
+  client.user.setActivity('Pornhub', { type: 'PLAYING' }); 
 })
 
 //thính thính =)))
